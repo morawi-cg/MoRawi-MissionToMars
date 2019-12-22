@@ -6,5 +6,5 @@
  
 <p>Each stage was read & analyzed to derive the software functionality for a software class or likewise object</p>
 <p>Diagraming was used as software's success in presenting a solution will depend on the correct visualization of functions and flows.</p>
-<p>[Mars Vehicle Stages: Booster Diagram](file:///Mars-Stages-Diagram-Booster.jpeg)</p>
+<p><a href="This is the booster stage" target="Mars-Stages-Diagram-Booster.jpeg">Booster</a></p>
 <p>The Image above is an example of the booster stage.</p> 
