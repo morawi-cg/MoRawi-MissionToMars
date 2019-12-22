@@ -5,6 +5,8 @@
 <p>This flexibility allows participants to change the language to a more preferred language.</p>
  
 <p>Each stage was read & analyzed to derive the software functionality for a software class or likewise object</p>
+
+```
 -----------------------------------------------------------------------
 First Stage (Booster)                                   | Description |
 ------------------------------------------------------- | -------------
@@ -38,6 +40,8 @@ package-lock.json	                                |             |
 package.json	                                        |             |
 server.js                                               |             |
 -----------------------------------------------------------------------
+
+```
 <p>Diagraming was used as software's success in presenting a solution will depend on the correct visualization of functions and flows.</p>
 <p>[This is a general diagram with focus on the booster stage]<img src=Mars-Stages-Diagram-Booster.jpeg></p>
 <p>The Image above is an example of the booster stage.</p> 
