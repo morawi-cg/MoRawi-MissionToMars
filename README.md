@@ -50,8 +50,8 @@ server.js                                               |             |
 ## Todo
 
 - [x] Support basic REST APIs.
-- [ ] Design layers of APIs to interconnect the 3 vehicle stages .
-- [ ] Make convenient wrappers for creating API handlers for the different languages based upon each of the 3 vehicle components.
-- [ ] tests for all APIs.
-- [x] Organize the code with packages
-- [x ] Building a deployment process
+- [x] Design layers of APIs to interconnect the 3 vehicle stages .
+- [x] Make convenient wrappers for creating API handlers for the different languages based upon each of the 3 vehicle components.
+- [x] tests for all APIs & their interactions.
+- [x] Organize the code with packages.
+- [x] Building a deployment process.
