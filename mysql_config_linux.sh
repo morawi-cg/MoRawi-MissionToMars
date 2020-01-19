@@ -1,4 +1,7 @@
 #!/bin/bash
+pip install mysql-connector-python
+pip install MySQL-python
+pip install pymysql
 mysql -u root -p
 CREATE DATABASE `todoapp`;
 CREATE USER 'guest' IDENTIFIED BY 'Guest0000!';
