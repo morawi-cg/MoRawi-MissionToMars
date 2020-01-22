@@ -55,3 +55,11 @@ server.js                                               |             |
 - [x] tests for all APIs & their interactions.
 - [x] Organize the code with packages.
 - [x] Building a deployment process.
+
+### Mysql
+
+A good way to pass the create script through another one is to follow this way
+```
+   mysql -u root -e"set @temp=1; `cat /home/mysql/Desktop/mysql_config_linux.sql`"
+
+```
