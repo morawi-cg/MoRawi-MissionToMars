@@ -60,7 +60,7 @@ server.js                                               |             |
 
 A good way to pass the create script through another one is to follow this way
 ```
-   mysql -u root -e"set @temp=1; `cat /home/mysql/Desktop/mysql_config_linux.sql`"
+   mysql -u root -e"set @temp=1; `cat $PATHTOMYSQLSCRIPT/mysql_config_linux.sql`"
 
 ```
 
