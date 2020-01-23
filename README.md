@@ -63,3 +63,9 @@ A good way to pass the create script through another one is to follow this way
    mysql -u root -e"set @temp=1; `cat /home/mysql/Desktop/mysql_config_linux.sql`"
 
 ```
+
+### Debug
+A tool called delve came handy, a link is left below:
+```
+go get -u github.com/go-delve/delve/cmd/dlv
+```
