@@ -69,3 +69,8 @@ A tool called delve came handy, a link is left below:
 ```
 go get -u github.com/go-delve/delve/cmd/dlv
 ```
+Trying to test with dlv will reveal issues with code via the debug flag
+testing the binary 'booster' done via the link below:
+```
+curl 127.0.0.1:3000/?users=booster
+```
