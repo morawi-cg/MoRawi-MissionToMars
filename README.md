@@ -74,3 +74,4 @@ testing the binary 'booster' done via the link below:
 ```
 curl 127.0.0.1:3000/?users=booster
 ```
+<img>BoosterTest.png</img>
