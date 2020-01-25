@@ -75,3 +75,4 @@ testing the binary 'booster' done via the link below:
 curl 127.0.0.1:3000/?users=booster
 ```
 !BoosterTest.png!
+<p>[The output of the test for port binding]<img src=BoosterTest.png></p>
