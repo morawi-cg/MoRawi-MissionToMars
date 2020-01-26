@@ -76,3 +76,33 @@ curl 127.0.0.1:3000/?users=booster
 ```
 
 <p>[The output of the test for port binding]<img src=BoosterTest.png></p>
+
+
+### Extra dependencies:
+The Packages such as Node needed extas installed on the hosting vms:
+
+```
+└─┬ mongoose@5.8.9 
+  ├── bson@1.1.3 
+  ├── kareem@2.3.1 
+  ├─┬ mongodb@3.4.1 
+  │ ├─┬ require_optional@1.0.1 
+  │ │ ├── resolve-from@2.0.0 
+  │ │ └── semver@5.7.1 
+  │ └─┬ saslprep@1.0.3 
+  │   └─┬ sparse-bitfield@3.0.3 
+  │     └── memory-pager@1.5.0 
+  ├── mongoose-legacy-pluralize@1.0.2 
+  ├── mpath@0.6.0 
+  ├─┬ mquery@3.2.2 
+  │ ├── bluebird@3.5.1 
+  │ └─┬ debug@3.1.0 
+  │   └── ms@2.0.0 
+  ├── ms@2.1.2 
+  ├── regexp-clone@1.0.0 
+  ├── safe-buffer@5.1.2 
+  ├── sift@7.0.1 
+  └── sliced@1.0.1 
+
+
+```
