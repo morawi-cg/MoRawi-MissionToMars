@@ -47,9 +47,9 @@ server.js                                               |             |
 <p>The Image above is an example of the booster stage.</p> 
 
 
-## Todo
-
-- [x] Support basic REST APIs.
+## To Operate Do
+- [x] Build the mysql or mariadb container, needed by the booster. It is inside "__MoRawi-MissionToMars__/todoapp-db"
+- [x] Build Go container located in __M0Rawi-MoissionToMars__/Booster, "docker build -t booster . ".
 - [x] Design layers of APIs to interconnect the 3 vehicle stages .
 - [x] Make convenient wrappers for creating API handlers for the different languages based upon each of the 3 vehicle components.
 - [x] tests for all APIs & their interactions.
