@@ -1,5 +1,5 @@
 From mariadb:latest
-USER root
+#USER root
 ADD todoapp-db.sql /tmp/todoapp-db.sql
 RUN mysql -u root < /tmp/todoapp-db.sql
 # can do as below:
