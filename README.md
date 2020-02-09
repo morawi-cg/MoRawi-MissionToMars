@@ -1,10 +1,11 @@
 # <p>Mo Rawi Mission to Mars</p>
-<p>This is a simple software based conceptualization of a Mars space launch vehicle. A scenario was presented.</p>
-<p>It has each stage of the launch vehicle described within a class like software presentation, the total number of stages are 3.</p> 
-<p>Each was given in a different programming language. An extra fexibility was offered to the participants in the technical challenge.</p> 
-<p>This flexibility allows participants to change the language to a more preferred language.</p>
- 
-<p>Each stage was read & analyzed to derive the software functionality for a software class or likewise object</p>
+<p>This is a software based conceptualization of a Mars space launch vehicle.</p>
+<p>It has each stage of the launch vehicle described within a software package, the total number of stages are 3.</p> 
+<p>Each was given in a different programming language. Certain amount of time was given to understand new technologies that form individual part.</p> 
+<p>The booster package is based upon go, aided yb a mysql based database, the 2nd stage is a Python2 package, 3rd is nodejs with mongo as db.</p>
+<p>Each stage was to be run from a docker based container, the DBs are each in own container</p>
+<p>docker compose was used to test individual containers, then the connected structure</P>
+<p>Kompose the kubernetes based tool will be used to translate docker compose based YAML files into the Kubernetes alternative services and deployments.</p>
 
 ```
 -----------------------------------------------------------------------
@@ -50,22 +51,15 @@ server.js                                               |             |
 ## Project story road map stages
 - [] Build Go container located in __M0Rawi-MoissionToMars__/Booster, test as a stand a lone container,(docker-compose).
 - [] Build the mysql or mariadb container, needed by the booster. It is inside "__MoRawi-MissionToMars__/todoapp-db",test using docker compose as an individual package/container.
-- [] Build stage2 container,(based upon python2.7, test via docker-compose .
+- [] Build stage2 container,(based upon python2.7), test via docker-compose .
 - [] Build cargo,(node-js), based container, test dependencies,(using docker-compose).
 - [] Build mongo-db based container, (using docker-compose), named the folder cargo-db.
 - [] Build a complete module connecting all the components using docker compose to test.
 - [] Translate the successful services to Kubernetes portable units using Kompose..
 - [] Test all to ensure they work as required.
 
-### Mysql
 
-A good way to pass the db-create script through mysql-prompt:
-```
-   mysql -u root -e"set @temp=1; `cat $PATHTOMYSQLSCRIPT/mysql_config_linux.sql`"
-
-```
-
-### Test & Debug
+### Test & Debug, tips and ideas: [Booster]
 A tool called delve came handy, a link is left below:
 ```
 go get -u github.com/go-delve/delve/cmd/dlv
@@ -76,11 +70,22 @@ testing the binary 'booster' done via the link below:
 curl 127.0.0.1:3000/?users=booster
 ```
 
+### Mysql [Booster dependency]
+
+A good way to pass the db-create script through mysql-prompt:
+```
+   mysql -u root -e"set @temp=1; `cat $PATHTOMYSQLSCRIPT/mysql_config_linux.sql`"
+
+```
+
+
 <p>[The output of the test for port binding]<img src=BoosterTest.png></p>
 
 
 ### Extra Testing & Dependencies:
-The Packages such as Node needed extas installed on the hosting vms, this was an erlier stage to form better understanding of certain technologies:
+Some testing was implemented on vms, this was to understand the software functionality, solving dependency & better understanding the way in which porting to containers should be done.
+
+Packages such as Node-JS based ones & Golang based ones , needed extas dependencies installed on the hosting vms, this was handled through the discovery & teting process, aimed at the software functionality:
 
 ```
 └─┬ mongoose@5.8.9 
