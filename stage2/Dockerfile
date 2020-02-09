@@ -1,4 +1,4 @@
-From python:3
+From python:latest
 
 ADD ../B-Yond/amaze-us/microservice/challenge-3/stage2 .
 WORKDIR stage2
