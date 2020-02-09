@@ -3,6 +3,7 @@ ADD ../../B-Yond/amaze-us/microservice/challenge-3/cargo .
 WORKDIR cargo
 RUN npm install mongoose
 RUN npm install --save morgan
+RUN npm install --save express 
 EXPOSE 8080
 CMD [ "node", "server.js" ]
 
