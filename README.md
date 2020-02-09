@@ -47,18 +47,19 @@ server.js                                               |             |
 <p>The Image above is an example of the booster stage.</p> 
 
 
-## To Operate Do
-- [x] Build the mysql or mariadb container, needed by the booster. It is inside "__MoRawi-MissionToMars__/todoapp-db"
-- [x] Build Go container located in __M0Rawi-MoissionToMars__/Booster, "docker build -t booster . ".
-- [x] Design layers of APIs to interconnect the 3 vehicle stages .
-- [x] Make convenient wrappers for creating API handlers for the different languages based upon each of the 3 vehicle components.
-- [x] tests for all APIs & their interactions.
-- [x] Organize the code with packages.
-- [x] Building a deployment process.
+## Project story road map stages
+- [] Build Go container located in __M0Rawi-MoissionToMars__/Booster, test as a stand a lone container,(docker-compose).
+- [] Build the mysql or mariadb container, needed by the booster. It is inside "__MoRawi-MissionToMars__/todoapp-db",test using docker compose as an individual package/container.
+- [] Build stage2 container,(based upon python2.7, test via docker-compose .
+- [] Build cargo,(node-js), based container, test dependencies,(using docker-compose).
+- [] Build mongo-db based container, (using docker-compose), named the folder cargo-db.
+- [] Build a complete module connecting all the components using docker compose to test.
+- [] Translate the successful services to Kubernetes portable units using Kompose..
+- [] Test all to ensure they work as required.
 
 ### Mysql
 
-A good way to pass the create script through another one is to follow this way
+A good way to pass the db-create script through mysql-prompt:
 ```
    mysql -u root -e"set @temp=1; `cat $PATHTOMYSQLSCRIPT/mysql_config_linux.sql`"
 
@@ -78,8 +79,8 @@ curl 127.0.0.1:3000/?users=booster
 <p>[The output of the test for port binding]<img src=BoosterTest.png></p>
 
 
-### Extra dependencies:
-The Packages such as Node needed extas installed on the hosting vms:
+### Extra Testing & Dependencies:
+The Packages such as Node needed extas installed on the hosting vms, this was an erlier stage to form better understanding of certain technologies:
 
 ```
 └─┬ mongoose@5.8.9 
