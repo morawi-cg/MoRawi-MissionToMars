@@ -1,0 +1,30 @@
+version 3
+services:
+
+    booster:
+        build: Booster
+        ports:
+          -"3000:3000"
+    
+    todo-db:
+        build: todo-db
+        ports:
+          - "27017:27017"
+          - "28017:28017" 
+
+    stage2:
+        build: stage2
+        ports:
+          - "80:80"
+
+    cargo:
+        build: cargo
+        ports:
+          - "8080:8080"
+
+    cargo-db:
+        build: cargo-db
+        ports:
+          - "27017:27017"
+          - "28018:28018"
+       
