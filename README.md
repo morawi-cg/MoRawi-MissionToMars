@@ -114,7 +114,7 @@ Packages such as Node-JS based ones & Golang based ones , needed extas dependenc
 ```
 
 ### Docker compose 
-To bring up the components using a docker compose command
+To bring up the components using a docker compose command. Each folder for each stage unit had a docker compose file to allow for unit test. A central docker compose file is available to run the entire collection of services.
 
 ```
 
