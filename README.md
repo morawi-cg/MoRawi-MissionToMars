@@ -112,3 +112,49 @@ Packages such as Node-JS based ones & Golang based ones , needed extas dependenc
 
 
 ```
+
+### Docker compose 
+To bring up the components using a docker compose command
+
+```
+
+ docker-compose up    # -d flag might follow the up to make it run in the background
+
+```
+To stop
+
+``` 
+ docker-compose stop <service name> 
+ # The specific service name would be arrived at from the docker-compose file 
+
+```
+To start specific service 
+
+```
+ docker-compose start <service name>
+
+```
+
+To delete service 
+
+```
+ docker-compose rm -f <service name>
+
+```
+
+
+To run a command on a container, used for testing
+
+```
+ docker-compose run <service name > command # command could be ls
+
+```
+To scale
+
+```
+ docker-compose scale <service name>=<number> 
+
+```
+
+
+ 
