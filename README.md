@@ -49,7 +49,7 @@ server.js                                               |             |
 
 
 ## Project story road map stages
-- [] Build Go container located in __M0Rawi-MoissionToMars__/Booster, test as a stand a lone container,(docker-compose).
+- [] Build Go container located in __MoRawi-MoissionToMars__/Booster, test as a stand a lone container,(docker-compose).
 - [] Build the mysql or mariadb container, needed by the booster. It is inside "__MoRawi-MissionToMars__/todoapp-db",test using docker compose as an individual package/container.
 - [] Build stage2 container,(based upon python2.7), test via docker-compose .
 - [] Build cargo,(node-js), based container, test dependencies,(using docker-compose).
