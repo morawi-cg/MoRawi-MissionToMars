@@ -6,7 +6,7 @@ ADD ../booster .
 
 WORKDIR booster
 
-go get github.com/mingrammer/go-todo-rest-api-example
+RUN go get github.com/mingrammer/go-todo-rest-api-example
 
 RUN go build -o main .
 
