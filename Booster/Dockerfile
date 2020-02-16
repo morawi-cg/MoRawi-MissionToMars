@@ -17,4 +17,6 @@ EXPOSE 3000
 RUN go build -o main .
 CMD ["/booster/main"]
 #docker build -t Booster .
+# can build using this syntax
 
+# docker build --squash  -t morawi/missiontomarsbooster:latest -f Dockerfile
