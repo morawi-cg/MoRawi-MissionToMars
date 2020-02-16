@@ -2,9 +2,11 @@ From golang:latest
 
 LABEL maintainer="Mo Rawi <morawi-cg@github.com>"
 
-ADD ../booster .
+RUN mkdir /booster
 
-WORKDIR booster
+COPY booster/* /booster/
+
+WORKDIR /booster
 
 RUN go get github.com/mingrammer/go-todo-rest-api-example
 
