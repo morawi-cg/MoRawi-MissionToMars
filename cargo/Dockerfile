@@ -1,6 +1,6 @@
 FROM node:latest
-ADD ../../B-Yond/amaze-us/microservice/challenge-3/cargo .
-WORKDIR cargo
+COPY cargo /cargo
+WORKDIR /cargo
 RUN npm install mongoose
 RUN npm install --save morgan
 RUN npm install --save express 
