@@ -3,7 +3,7 @@ services:
     todo-db:
         build: 
           context: .
-          dockerfile: todo-db/Dockerfile
+          dockerfile: todoapp-db/Dockerfile
         ports:
           - "3306:3306"
         environment:
