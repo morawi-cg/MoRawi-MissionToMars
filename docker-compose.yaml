@@ -2,6 +2,7 @@ version: '3'
 services:
     todo-db:
         image: morawi/missiontomars.tododb:0.1
+        container_name: todo-db
         build: 
           context: .
           dockerfile: todoapp-db/Dockerfile
@@ -13,6 +14,7 @@ services:
           MYSQL_DATABASE: todoapp   
     booster:
         image: morawi/missiontomars.booster:0.1
+        container_name: booster
         build: 
           context: .
           dockerfile: Booster/Dockerfile
@@ -21,6 +23,7 @@ services:
    
     stage2:
         image: morawi/missiontomars.stage2:0.1
+        container_name: stage2
         build: 
           context: .
           dockerfile: stage2/Dockerfile
@@ -29,6 +32,9 @@ services:
   
     cargo-db:
         image: morawi/missiontomars.cargo-db:0.1
+        container_name: cargo-db
+        environment: 
+          MONGO_INITDB_DATABASE: "cargo"
         build: 
           context: .
           dockerfile: cargo-db/Dockerfile
@@ -38,6 +44,7 @@ services:
   
     cargo:
         image: morawi/missiontomars.cargo:0.1
+        container_name: cargo
         build: 
           context: .
           dockerfile: cargo/Dockerfile
