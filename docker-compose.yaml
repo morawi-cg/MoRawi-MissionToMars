@@ -1,8 +1,9 @@
 version: '3'
 services:
     todo-db:
-        build: context .
-        dockerfile: todo-db/Dockerfile
+        build: 
+          context: .
+          dockerfile: todo-db/Dockerfile
         ports:
           - "3306:3306"
         environment:
@@ -26,7 +27,7 @@ services:
     cargo-db:
         build: 
           context: .
-          dockerdile: cargo-db/Dockerfile
+          dockerfile: cargo-db/Dockerfile
         ports:
           - "27017:27017"
           - "28018:28018"  
