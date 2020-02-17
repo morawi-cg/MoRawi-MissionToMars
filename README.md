@@ -62,6 +62,7 @@ server.js                                               |             |
 - [] Run kompose 'convert -f docker-compose.yaml'
 - [] Translate the successful services to Kubernetes portable units using Kompose..
 - [] Test all to ensure they work as required.
+- [] Created 'kubernetes-based-services' folder which hosts the translated services I made from running kompose 
 
 
 ### Test & Debug, tips and ideas: [Booster]
