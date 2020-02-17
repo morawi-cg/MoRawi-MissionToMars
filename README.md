@@ -48,13 +48,18 @@ server.js                                               |             |
 <p>The Image above is an example of the booster stage.</p> 
 
 
-## Project story road map stages
+## Project story road map stages:
+
+- [] initiate 'docker-compose up' this will process the 'docker-compose.yaml' file, it will complete steps below
 - [] Build Go container located in __MoRawi-MoissionToMars__/Booster, test as a stand a lone container,(docker-compose).
 - [] Build the mysql or mariadb container, needed by the booster. It is inside "__MoRawi-MissionToMars__/todoapp-db",test using docker compose as an individual package/container.
 - [] Build stage2 container,(based upon python2.7), test via docker-compose .
 - [] Build cargo,(node-js), based container, test dependencies,(using docker-compose).
 - [] Build mongo-db based container, (using docker-compose), named the folder cargo-db.
 - [] Build a complete module connecting all the components using docker compose to test.
+- [] once test and validation is complete try to translate to kuberneted based files using compose
+- [] Obtain compose by 'curl -L https://github.com/kubernetes/kompose/releases/download/v1.20.0/kompose-linux-amd64 -o kompose'
+- [] Run kompose 'convert -f docker-compose.yaml'
 - [] Translate the successful services to Kubernetes portable units using Kompose..
 - [] Test all to ensure they work as required.
 
