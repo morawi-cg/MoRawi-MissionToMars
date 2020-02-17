@@ -1,5 +1,6 @@
 FROM node:latest
-COPY /home/vagrant/go/src/challenge-3/cargo /cargo
+LABEL maintainer="Mo Rawi <morawi-cg@github.com>"
+COPY cargo /cargo
 WORKDIR /cargo
 RUN npm install mongoose
 RUN npm install --save morgan

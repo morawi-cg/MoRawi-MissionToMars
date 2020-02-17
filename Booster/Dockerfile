@@ -3,7 +3,7 @@ From golang:latest
 LABEL maintainer="Mo Rawi <morawi-cg@github.com>"
 
 
-COPY ../../booster /booster
+COPY  Booster/booster /booster
 
 WORKDIR /booster
 

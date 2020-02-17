@@ -1,6 +1,6 @@
 From python:latest
 
-ADD /home/vagrant/go/src/challenge-3/stage2 .
+ADD stage2 /
 WORKDIR stage2
 
 
@@ -10,9 +10,7 @@ WORKDIR stage2
 
 CMD [ "python", "./stage2.py" ]
 
-#$ docker build -t stage2 .
-#$ docker run -it --rm --name my-running-app stage2
 
 ENTRYPOINT ["python", "./stage2.py"]
-EXPOSE 80
+
 
