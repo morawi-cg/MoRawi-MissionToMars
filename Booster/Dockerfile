@@ -2,9 +2,8 @@ From golang:latest
 
 LABEL maintainer="Mo Rawi <morawi-cg@github.com>"
 
-RUN mkdir /booster
 
-COPY /home/vagrant/go/src/challenge-3/booster/* /booster/
+COPY ../../booster /booster
 
 WORKDIR /booster
 
