@@ -1,4 +1,4 @@
 From mariadb:latest
 USER root
-EXPOSE 3306
+#EXPOSE 3306
 

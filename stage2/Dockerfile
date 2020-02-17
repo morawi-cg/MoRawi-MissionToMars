@@ -1,6 +1,6 @@
 From python:latest
 
-ADD ../B-Yond/amaze-us/microservice/challenge-3/stage2 .
+ADD /home/vagrant/go/src/challenge-3/stage2 .
 WORKDIR stage2
 
 

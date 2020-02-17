@@ -1,10 +1,10 @@
 FROM node:latest
-COPY cargo /cargo
+COPY /home/vagrant/go/src/challenge-3/cargo /cargo
 WORKDIR /cargo
 RUN npm install mongoose
 RUN npm install --save morgan
 RUN npm install --save express 
-EXPOSE 8080
+#EXPOSE 8080
 CMD [ "node", "server.js" ]
 
 # Build instructions
