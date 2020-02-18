@@ -1,11 +1,13 @@
 # <p>Mo Rawi Mission to Mars</p>
-<p>This is a software based conceptualization of a Mars space launch vehicle.</p>
-<p>It has each stage of the launch vehicle described within a software package, the total number of stages are 3.</p> 
-<p>Each was given in a different programming language. Certain amount of time was given to understand new technologies that form individual part.</p> 
-<p>The booster package is based upon go, aided yb a mysql based database, the 2nd stage is a Python2 package, 3rd is nodejs with mongo as db.</p>
-<p>Each stage was to be run from a docker based container, the DBs are each in own container</p>
-<p>docker compose was used to test individual containers, then the connected structure</P>
-<p>Kompose the kubernetes based tool will be used to translate docker compose based YAML files into the Kubernetes alternative services and deployments.</p>
+<p>This software a conceptualization of a Mars space launch vehicle.</p>
+<p>It has 3 stages launch vehicle described, each described within a package, the total number of stages are 3.</p>
+<p>Dependencies for packages are in the form of databases, mysql/mariadb for the booster package. mongodb for the cargo package.   
+<p>Each package was given is based upon a different programming language</p> 
+<p>Each stage package is to be run from a within a docker based container, locally tested using docker file, then docker-compose to connect together</p>
+<p>Kompose the kubernetes based is used to translate docker compose based YAML files into the Kubernetes alternative services and deployments.</p>
+
+
+### Reasearch into the programming languages forming individual components was conducted to understand the functions.
 
 ```
 -----------------------------------------------------------------------
@@ -49,22 +51,22 @@ server.js                                               |             |
 
 
 ## Project story road map stages:
-- [] Copy this folder into 'amaze-us/microservice/challenge-3'.
-- [] Initiate the 'CodeSourceDestMover.sh' script, this will copy relevent component source to desired location for the docker-compose to activate build.
-- [] initiate 'docker-compose up' this will process the 'docker-compose.yaml' file, it will complete steps below.
-- [] Build the container for the 'todoapp-db'. Always DB first then the app component that needs it.
-- [] Build  'booseter Go container', located in __MoRawi-MoissionToMars__/Booster.
-- [] Build stage2 container,(based upon python2.7).
-- [] Build mongo-db based container, (using docker-compose), named the folder cargo-db.
-- [] Build cargo,(node-js), based container, test dependencies,(using docker-compose).
-- [] A each components (container can be build individualy with docker-compose file or the Docker file kept in the spcecific container folder.
-- [] After test/validation is complete with success, try to translate to kuberneted based files using kompose, assuming Kubernetes is the target choice.
-- [] Ensure you have selected the version of kompose suitable for the Operating system you will use to process this code, defacto here is Linux.
-- [] Obtain kompose by 'curl -L https://github.com/kubernetes/kompose/releases/download/v1.20.0/kompose-linux-amd64 -o kompose'
-- [] Run kompose 'convert -f docker-compose.yaml'
-- [] Translate the successful services to Kubernetes portable units using Kompose..
-- [] Test all to ensure they work as required.
-- [] Created 'kubernetes-based-services' folder which hosts the translated services I made from running kompose 
+- [1] Copy this folder into 'amaze-us/microservice/challenge-3'.
+- [2] Initiate the 'CodeSourceDestMover.sh' script, this will copy relevent component source to desired location for the docker-compose to activate build.
+- [3] initiate 'docker-compose up' this will process the 'docker-compose.yaml' file, it will complete steps below.
+- [4] Build the container for the 'todoapp-db'. Always DB first then the app component that needs it.
+- [5] Build  'booseter Go container', located in __MoRawi-MoissionToMars__/Booster.
+- [6] Build stage2 container,(based upon python2.7).
+- [7] Build mongo-db based container, (using docker-compose), named the folder cargo-db.
+- [8] Build cargo,(node-js), based container, test dependencies,(using docker-compose).
+- [9] A each components (container can be build individualy with docker-compose file or the Docker file kept in the spcecific container folder.
+- [10] After test/validation is complete with success, try to translate to kuberneted based files using kompose, assuming Kubernetes is the target choice.
+- [11] Ensure you have selected the version of kompose suitable for the Operating system you will use to process this code, defacto here is Linux.
+- [12] Obtain kompose by 'curl -L https://github.com/kubernetes/kompose/releases/download/v1.20.0/kompose-linux-amd64 -o kompose'
+- [13] Run kompose 'convert -f docker-compose.yaml'
+- [14] Translate the successful services to Kubernetes portable units using Kompose..
+- [15] Test all to ensure they work as required.
+- [16] Created 'kubernetes-based-services' folder which hosts the translated services I made from running kompose 
 
 
 ### Test & Debug, tips and ideas: [Booster]
