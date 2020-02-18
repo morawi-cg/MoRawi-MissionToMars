@@ -7,7 +7,7 @@
 <p>Kompose the kubernetes based is used to translate docker compose based YAML files into the Kubernetes alternative services and deployments.</p>
 
 
-### Reasearch into the programming languages forming individual components was conducted to understand the functions.
+##### Reasearch into the programming languages forming individual components was conducted to understand the functions,(Golang && NodeJS) in specific.
 
 ```
 -----------------------------------------------------------------------
@@ -45,12 +45,12 @@ server.js                                               |             |
 -----------------------------------------------------------------------
 
 ```
-<p>Diagraming was used as software's success in presenting a solution will depend on the correct visualization of functions and flows.</p>
+<p>Diagrams provided to visualize concepts and software flows, used draw.io.</p>
 <p>[This is a general diagram with focus on the booster stage]<img src=Mars-Stages-Diagram-Booster.jpeg></p>
-<p>The Image above is an example of the booster stage.</p> 
+<p>The Image above detailed the booster stage, given as an example of the thinking process.</p> 
 
 
-## Project story road map stages:
+## Software activation stages:
 - [1] Copy this folder into 'amaze-us/microservice/challenge-3'.
 - [2] Initiate the 'CodeSourceDestMover.sh' script, this will copy relevent component source to desired location for the docker-compose to activate build.
 - [3] initiate 'docker-compose up' this will process the 'docker-compose.yaml' file, it will complete steps below.
@@ -92,8 +92,8 @@ A good way to pass the db-create script through mysql-prompt:
 <p>[The output of the test for port binding]<img src=BoosterTest.png></p>
 
 
-### Extra Testing & Dependencies:
-Some testing was implemented on vms, this was to understand the software functionality, solving dependency & better understanding the way in which porting to containers should be done.
+###  Testing & Dependencies processing:
+Early testing was implemented on virtual machines, this was to understand the software modules/components, solve dependency & better understanding the way in which porting to containers should be done.
 
 Packages such as Node-JS based ones & Golang based ones , needed extas dependencies installed on the hosting vms, this was handled through the discovery & teting process, aimed at the software functionality:
 
