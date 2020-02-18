@@ -49,16 +49,18 @@ server.js                                               |             |
 
 
 ## Project story road map stages:
-
-- [] initiate 'docker-compose up' this will process the 'docker-compose.yaml' file, it will complete steps below
-- [] Build Go container located in __MoRawi-MoissionToMars__/Booster, test as a stand a lone container,(docker-compose).
-- [] Build the mysql or mariadb container, needed by the booster. It is inside "__MoRawi-MissionToMars__/todoapp-db",test using docker compose as an individual package/container.
-- [] Build stage2 container,(based upon python2.7), test via docker-compose .
-- [] Build cargo,(node-js), based container, test dependencies,(using docker-compose).
+- [] Copy this folder into 'amaze-us/microservice/challenge-3'.
+- [] Initiate the 'CodeSourceDestMover.sh' script, this will copy relevent component source to desired location for the docker-compose to activate build.
+- [] initiate 'docker-compose up' this will process the 'docker-compose.yaml' file, it will complete steps below.
+- [] Build the container for the 'todoapp-db'. Always DB first then the app component that needs it.
+- [] Build  'booseter Go container', located in __MoRawi-MoissionToMars__/Booster.
+- [] Build stage2 container,(based upon python2.7).
 - [] Build mongo-db based container, (using docker-compose), named the folder cargo-db.
-- [] Build a complete module connecting all the components using docker compose to test.
-- [] once test and validation is complete try to translate to kuberneted based files using compose
-- [] Obtain compose by 'curl -L https://github.com/kubernetes/kompose/releases/download/v1.20.0/kompose-linux-amd64 -o kompose'
+- [] Build cargo,(node-js), based container, test dependencies,(using docker-compose).
+- [] A each components (container can be build individualy with docker-compose file or the Docker file kept in the spcecific container folder.
+- [] After test/validation is complete with success, try to translate to kuberneted based files using kompose, assuming Kubernetes is the target choice.
+- [] Ensure you have selected the version of kompose suitable for the Operating system you will use to process this code, defacto here is Linux.
+- [] Obtain kompose by 'curl -L https://github.com/kubernetes/kompose/releases/download/v1.20.0/kompose-linux-amd64 -o kompose'
 - [] Run kompose 'convert -f docker-compose.yaml'
 - [] Translate the successful services to Kubernetes portable units using Kompose..
 - [] Test all to ensure they work as required.
@@ -103,7 +105,7 @@ Packages such as Node-JS based ones & Golang based ones , needed extas dependenc
   │ │ └── semver@5.7.1 
   │ └─┬ saslprep@1.0.3 
   │   └─┬ sparse-bitfield@3.0.3 
-  │     └── memory-pager@1.5.0 
+  	│     └── memory-pager@1.5.0 
   ├── mongoose-legacy-pluralize@1.0.2 
   ├── mpath@0.6.0 
   ├─┬ mquery@3.2.2 
